@@ -412,7 +412,7 @@ cd Semester-Project-Skeleton-Code
 </ol>
 
 
-<p>For the third and final part (remaining project, 40 (+ 10 bonus) points, test cases 9-16 listed below), you need to prepare:</p>
+<p>For the third and final part (remaining project, 40 (+ 20 bonus) points, test cases 9-16 listed below), you need to prepare:</p>
 
 <ol>
   <li>
@@ -471,28 +471,28 @@ cd Semester-Project-Skeleton-Code
   <li>(5 pts) Client able to successfully transmit a small file (500 bytes)</li>
   <li>(5 pts) Client able to successfully transmit a medium size file (1 MiB)</li>
   <li>(5 pts) Client able to successfully transmit a large size file (100 MiB)</li>
-  <li>(5 pts) Server able to receive a small file (500 bytes) and save it in <code class="highlighter-rouge">1.file</code></li>
-  <li>(10 pts, 2 tests) Server able to receive a medium file (1 MiB bytes) and save it in <code class="highlighter-rouge">1.file</code>
+  <li>(5 pts + 1 <strong>bonus</strong> pt) Server able to receive a small file (500 bytes) and save it in <code class="highlighter-rouge">1.file</code></li>
+  <li>(10 pts + 2 <strong>bonus</strong> pts, 2 tests) Server able to receive a medium file (1 MiB bytes) and save it in <code class="highlighter-rouge">1.file</code>
     <ul>
-      <li>(5 pts) receiving file sent without delays</li>
-      <li>(5 pts) receiving file sent with delays</li>
+      <li>(5 pts + 1 <strong>bonus</strong> pt) receiving file sent without delays</li>
+      <li>(5 pts + 1 <strong>bonus</strong> pt) receiving file sent with delays</li>
     </ul>
   </li>
-  <li>(10 pts, 2 tests) Server able to receive a large file (100 MiB bytes) and save it in <code class="highlighter-rouge">1.file</code>
+  <li>(10 pts + 2 <strong>bonus</strong> pts, 2 tests) Server able to receive a large file (100 MiB bytes) and save it in <code class="highlighter-rouge">1.file</code>
     <ul>
-      <li>(5 pts) receiving file sent without delays</li>
-      <li>(5 pts) receiving file sent with delays</li>
+      <li>(5 pts + 1 <strong>bonus</strong> pt) receiving file sent without delays</li>
+      <li>(5 pts + 1 <strong>bonus</strong> pt) receiving file sent with delays</li>
     </ul>
   </li>
-  <li>(5 pts) Server can properly receive 10 small files (sent without delays) in <code class="highlighter-rouge">1.file</code>, <code class="highlighter-rouge">2.file</code>, … <code class="highlighter-rouge">10.file</code> when a single client connects sequentially
+  <li>(5 pts + 1 <strong>bonus</strong> pt) Server can properly receive 10 small files (sent without delays) in <code class="highlighter-rouge">1.file</code>, <code class="highlighter-rouge">2.file</code>, … <code class="highlighter-rouge">10.file</code> when a single client connects sequentially
   <!--  <ul> -->
       <!-- <li>(5 pts) a single client connects sequentially</li> -->
       <!-- <li>(5 pts) 10 clients connect simultaneously (our test will ensure proper ordering of connections)</li> -->
     <!-- </ul> -->
   </li>
-  <li>(5 pts) Client handles abort connection attempt after 10 seconds.</li>
-  <li>(5 pts) Client aborts connection when server gets disconnected (server app or network connection is down)</li>
-  <li>(5 pts) Server aborts connection (a file should be created, containing only <code class="highlighter-rouge">ERROR</code> string) when it does not receive data from client for more than 10 seconds</li>
+  <li>(5 pts + 1 <strong>bonus</strong> pt) Client handles abort connection attempt after 10 seconds.</li>
+  <li>(5 pts + 1 <strong>bonus</strong> pt) Client aborts connection when server gets disconnected (server app or network connection is down)</li>
+  <li>(5 pts + 2 <strong>bonus</strong> pts) Server aborts connection (a file should be created, containing only <code class="highlighter-rouge">ERROR</code> string) when it does not receive data from client for more than 10 seconds</li>
   <li>(10 <strong>bonus</strong> pts) Client is able to successfully send and server is able to properly receive and save 10 large files over lossy and large delay network (we will use <code class="highlighter-rouge">tc</code> based emulation).</li>
 </ol>
 
